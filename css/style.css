@@ -20,6 +20,11 @@
     margin-bottom: 1rem;
 }
 
+/* regola specifica per ridurre il margine tra il main e il footer */
+.container :nth-last-child(2) {
+    margin-bottom: 0.5rem;
+}
+
 header {
     height: 5rem;
     background-color: #e579e6;
