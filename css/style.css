@@ -1,0 +1,73 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.container * {
+    margin-bottom: 1rem;
+}
+
+header {
+    height: 5rem;
+    background-color: #e579e6;
+}
+
+.jumbotron {
+    background-color: #e1d67a;
+    height: 20rem;
+}
+
+main {
+    background-color: #0186fe;
+}
+
+/* diamo uno sfondo comune a tutti i div dentro il main */
+main div {
+    background-color: #abcfe7;
+}
+
+/* stilizziamo la barra in cima al main */
+main .top {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+/* diamo il float left alle tre colonne dentro il main */
+main .left,
+main .right,
+main .center {
+    height: 10rem;
+    float: left;
+}
+
+/* diamo le dimensioni alle colonne ai lati */
+main .left,
+main .right {
+    width: 20%;
+}
+
+/* ho scelto di rare il margine solo alla colonna grande centrale. Di conseguenza la larghezza sarà il 60%
+(100% meno la larghezza di entrambe le colonne laterali) MENO il proprio margine laterale * 2 */
+main .center {
+    width: calc(60% - 2rem);
+    margin: 0 1rem;
+}
+
+footer {
+    background-color: #8801fe;
+    height: 3rem;
+}
